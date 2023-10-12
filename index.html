@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./assets/css/test.css">
+</head>
+
+<body>
+
+    <header id="head">
+        <button id="btn-nav" type="button">≡</button>
+
+        <div id="login">
+            <small>Generate your gambling-profile to play</small>
+
+
+            <input id="loginFirst" type="text" placeholder="First name">
+
+            <input id="loginLast" type="text" placeholder="Last name">
+
+            <input id="age" type="number" placeholder="Age">
+
+            <button id="btn-login" type="button">Login</button>
+            <div id="loginoutput"></div>
+        </div>
+
+        <div id="ageSum">
+            <small>How much will you bet?</small>
+            <input id="stake" type="text" placeholder="Sum">
+            <button id="set-balance" type="button">Add balance</button>
+        </div>
+
+
+        <div id="closed">
+            <small class="sglow">During weekends our page is closed.</small>
+            <select name="weekday" id="day">
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+                <option value="0">Sunday</option>
+            </select>
+        </div>
+
+        <div id="timer">
+            <small class="sglow">Set a play time limit for your session:</small><br>
+            <select name="timeLimit" id="selectTimeLimit">
+                <option value="0.10">10 sec</option>
+                <option value="5">5 min</option>
+                <option value="10">10 min</option>
+                <option value="15">15 min</option>
+                <option value="20">20 min</option>
+                <option value="30">30 min</option>
+                <option value="45">45 min</option>
+                <option value="60">1 h</option>
+                <option value="90">1h 30 min</option>
+                <option value="120">2 h</option>
+                <option value="150">2 h 30 min</option>
+                <option value="180">3 h</option>
+            </select>
+
+            <input id="setTimeLimit" type="button" value="Set time limit"><br>
+            <div id="sessionTimer"></div>
+            <div id="deadline"></div><br>
+        </div>
+
+
+        <div id="banner">
+            <div class="glow">CASINO</div>
+        </div>
+        <div id="clock">
+            <div class="sglow" id="dnT"></div>
+        </div>
+
+
+
+    </header>
+
+
+
+    <div id="menu">
+        <nav>
+
+            <div id="menuItem"></div>
+
+            <p id="colorMenu">Adjust color-theme</p><br>
+            <div id="chColor">
+                <div id="rgb-container1">
+                    <small class="sglow">Adjust background colors</small>
+                    <div>
+                        R <input type="range" min="0" max="255" value="0" id="red1" oninput="colorsBackground()">
+                    </div>
+                    <div>
+                        G <input type="range" min="0" max="255" value="0" id="green1" oninput="colorsBackground()">
+                    </div>
+                    <div>
+                        B <input type="range" min="0" max="255" value="0" id="blue1" oninput="colorsBackground()">
+                    </div>
+                </div>
+                <div id="output1">rgb(0,0,0)</div><br>
+
+
+                <div id="rgb-container2">
+                    <small class="sglow">Adjust text colors</small>
+                    <div>
+                        R <input type="range" min="0" max="255" value="255" id="red2" oninput="colorsText()">
+                    </div>
+                    <div>
+                        G <input type="range" min="0" max="255" value="255" id="green2" oninput="colorsText()">
+                    </div>
+                    <div>
+                        B <input type="range" min="0" max="255" value="255" id="blue2" oninput="colorsText()">
+                    </div>
+                </div>
+                <div id="output2">rgb(0,0,0)</div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h1>Welcome to CASINO!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis sed aliquam obcaecati ad alias facilis,
+            necessitatibus exercitationem corporis impedit, magnam ex architecto suscipit!
+
+            Vel totam, esse voluptates
+            optio eligendi possimus dignissimos similique repellendus voluptatibus fuga distinctio? Corrupti officia
+            exercitationem numquam quam culpa ea sunt rerum. Nobis neque quos exercitationem doloribus doloremque
+            tempore ducimus, dolores accusantium explicabo adipisci magnam maxime id veniam cumque impedit in recusandae
+            nostrum consectetur illum obcaecati aspernatur?
+
+            Aspernatur facere id illo magnam saepe quos quo libero
+            omnis!
+
+        </p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos vel quam maiores animi optio.
+            Veniam aut dolor reprehenderit ex reiciendis ab, laboriosam consequatur debitis. Architecto similique nulla
+            blanditiis nesciunt quos doloremque illo labore ad repellat, aliquid eveniet sequi molestias placeat?
+
+            Perferendis modi perspiciatis maxime. Minus adipisci voluptatum veniam commodi repellendus, maiores
+            inventore obcaecati quod quasi corrupti neque sunt ratione animi ullam labore excepturi corporis eum facere
+            quae iste magni dignissimos harum laboriosam numquam.
+
+            Magni est quos quia possimus libero voluptate dicta,
+            adipisci sunt exercitationem eveniet cumque eius numquam, veritatis similique. Amet alias tempora officiis
+            velit quis suscipit pariatur? Consequuntur.</p>
+        <img src="../assets/images/rated18.jpg" alt="rated18">
+    </div>
+
+
+
+    <script src="./assets/js/test.js"></script>
+    <script src="./assets/js/home.js"></script>
+
+
+
+</body>
+
+</html>

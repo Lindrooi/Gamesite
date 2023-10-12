@@ -1,0 +1,29 @@
+/* Om en undersida behöver egen CSS (som endast gäller den) kan du ha den i en skild fil */
+
+#game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#game-container input {
+    padding: 24px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.ssp-button {
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.ssp-button:hover {
+
+scale: 1.1;    
+
+}

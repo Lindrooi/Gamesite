@@ -1,0 +1,38 @@
+#game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: 45%;
+    gap: 10px;
+}
+
+.cards img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    transition: 1s ;
+    transition-timing-function: cubic-bezier(.76,.05,.86,.06);
+}
+
+.cards img:hover {
+    border: solid 2px yellow;
+}
+
+#game-container input {
+    padding: 24px;
+}
+

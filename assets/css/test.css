@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.glow {
+    font-size: 80px;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6d700, 0 0 40px #e6d700, 0 0 50px #e6d700, 0 0 60px #e6d700, 0 0 70px #e6d700;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fcff4d, 0 0 50px #fcff4d, 0 0 60px #fcff4d, 0 0 70px #fcff4d, 0 0 80px #fcff4d;
+    }
+}
+
+header {
+    background-color: black;
+    display: flex;
+    height: auto;
+    gap: 10px;
+    color: white;
+
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 200px;
+    justify-content: center;
+}
+
+#login>input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+
+}
+
+#login>button {
+    border: none;
+    width: auto;
+    height: 16px;
+    background-color: black;
+    border-radius: 10%;
+    border: 5px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+#ageSum {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+
+}
+
+#ageSum>input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#ageSum>button {
+    border: none;
+    width: 70px;
+    height: auto;
+    background-color: black;
+    border-radius: 10%;
+    border: 5px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+#closed {
+    display: flex;
+    flex-direction: column;
+}
+
+#closed>select {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 70px;
+}
+
+#timer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#timer>select {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 80px;
+    cursor: pointer;
+}
+
+#timer>input {
+    width: 80px;
+    background-color: black;
+    border-radius: 10%;
+    border: 5px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+#banner {
+    display: flex;
+    font-size: 70px;
+    flex: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock {
+
+    display: flex;
+    padding-right: 30px;
+
+
+
+}
+
+
+
+
+
+
+#btn-nav {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    border: none;
+    width: 40px;
+    min-height: 90px;
+    cursor: pointer;
+
+}
+
+#menu {
+    display: none;
+    height: 100%;
+    max-width: 200px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+
+
+}
+
+#menuItem  {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    z-index: 1;
+    gap: 4px;
+}
+
+
+#menuItem a {
+    
+    text-decoration: none;
+    color: white;
+    padding: 4px 4px 4px 4px;
+    text-align: center;
+
+    
+}
+
+#menuItem a:hover {
+    background-color: white;
+    color: black;
+}
+
+#colorMenu {
+    text-align: center;
+}
+
+
+#rgb-container1 {
+    display: block;
+    flex-direction: column;
+    z-index: 1;
+    padding: 5px;
+    
+}
+
+
+
+#output1 {
+    display: block;
+}
+
+#rgb-container2 {
+    display: block;
+    flex-direction: column;
+    z-index: 1;
+    padding: 5px;
+}
+
+#output2 {
+    display: block;
+
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+#content > h1 {
+    font-size: 70px;
+}
+
+div>p {
+    max-width: 600px;
+    gap: 6px;
+}
